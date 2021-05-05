@@ -132,3 +132,56 @@
     transform: scale(2);
 }
 /*inizio animaion*/
+ .ex-10-icon{
+    animation: notch 4s infinite;
+}
+@keyframes notch{
+    0%{
+        transform: rotate(-360deg); 
+    }
+}
+
+.ex-11-icon:hover{
+    animation: notch2 4s ease-in-out infinite;
+}
+@keyframes notch2{
+    0%{
+         transform: rotate(0eg); 
+    }
+    80%{
+         transform: rotate(270deg);
+    }
+    100%{
+         transform: rotate(0deg);
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: barra 3s linear infinite;
+}
+@keyframes barra{
+    0%{
+        left: 10%;
+    }
+    50%{
+        left: calc(100% - 60px);
+    }
+    100%{
+        left: 10%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: barrasotto 3s linear infinite;
+}
+@keyframes barrasotto{
+    0%{
+        right: 20%;
+    }
+    50%{
+        right: calc(100% - 60px);
+    }
+    100%{
+        right: 20%;
+    }
+}
+
